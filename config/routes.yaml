@@ -1,0 +1,61 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+#home:
+#    path:     /
+ #   defaults: { _controller: Produit:index2}
+
+home:
+    path: /
+    controller: App\Controller\ProduitController::index2Action
+
+
+
+
+produit_delete:
+    path:     /annuler
+    controller: App\Controller\ProduitController::delete
+
+
+produit_new:
+    path:     /newProduct
+    controller: App\Controller\ProduitController::new
+
+
+Produit_showActiona:
+    path:     /details
+    controller: App\Controller\ProduitController::show1Action
+
+
+
+
+produit_edit:
+    path:     /edit
+    controller: App\Controller\ProduitController::editAction
+
+
+pruduct_Panier:
+    path:     /reserver
+    controller: App\Controller\PanierController::reserverAction
+
+
+list_Panier:
+    path:     /paniers
+    controller: App\Controller\PanierController::indexAction
+
+annuler_com:
+    path:     /commandeAnnuler
+    controller: App\Controller\PanierController::annulerAction
+
+
+
+pruduct_acheter_index:
+    path:     /acheter
+    controller: App\Contrller\PanierController::viderAction
+
+
+
+user_default_admin:
+    path:     /admin
+    controller: App\Controller\ProduitController::adminAction
